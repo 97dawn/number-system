@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Digit Conversion - CSE220</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <script type = "text/javascript" src="scripts/DtoB.js"></script>
+    
+</head>
+<body>
+	<div class="container">
+	  	<div class="row">
+		  	<div class="col-sm" id="left">
+		      	<h1 class="display-4">Algorithm</h1>
+		      	<a class="btn btn-primary" id="main" href="index.html" role="button">Go Back to Main</a>
+				<p class="lead">
+				1. Repeatedly divide the decimal representation by 2 until the remainder is 0
+				</p>
+				<p class="lead">
+		  		2. Writing the remainders in right-to-left order
+		  		</p>
+		  		<form>
+					<div class="form-group">
+						<label class="col-form-label" for="formGroupExampleInput">My decimal number is:</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Decimal number input">
+					</div>
+				</form>	
+				<input class="btn btn-warning" type="button" value="Convert" onclick="convert()">
+				<div id="binaryWithColor"></div>
+		    </div>
+
+		    <div class="col-sm" id="right">
+		    	<h1 class="display-4"> Conversion Process </h1>
+		    	<input type="text" class="form-control" id="delayTime" placeholder="Delay for (sec)" style="width: 130px;">
+				<div id="process"></div>	
+		    </div>
+	    </div>
+	</div>	
+</body>
+</html>
